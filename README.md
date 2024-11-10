@@ -2,7 +2,7 @@
 
 ##
 
-- 🌱 aprendendo atualmente: Python / C / Java
+- 🌱 aprendendo atualmente: NextJs / Node / Typescript
 - 😄 Pronomes: ele/dele
 
 ##
