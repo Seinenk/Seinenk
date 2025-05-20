@@ -23,13 +23,10 @@
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" />
-  <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" />
   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.js" />
   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" />
   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" />
   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" />
-  <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" />
   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="Figma" />
 </div>
 
@@ -48,9 +45,9 @@
 
 | Projeto | Descrição | Tech Stack | Link |
 | :-----: | :-------- | :--------- | :--: |
-| **Dino-runner** | Joguinho do T-Rex para Raspberry Pi Pico W | C | [Repositório]([https://github.com/Seinenk/agenda-ai](https://github.com/Seinenk/Dino-runner)) |
-| **Monitoramento_com_iot** | Monitoramento de componentes via Wi-fi | C | [Repositório]([https://github.com/Seinenk/crohnease](https://github.com/Seinenk/Monitoramento_com_iot)) |
-| **cognitiva** | Comparativo de respostas geradas por IA | Python | [Repositório]([https://github.com/Seinenk/gas-detector](https://github.com/Seinenk/cognitiva)) |
+| **Dino-runner** | Joguinho do T-Rex para Raspberry Pi Pico W | C | [Repositório](https://github.com/Seinenk/Dino-runner) |
+| **Monitoramento_com_iot** | Monitoramento de componentes via Wi-fi | C | [Repositório](https://github.com/Seinenk/Monitoramento_com_iot) |
+| **cognitiva** | Comparativo de respostas geradas por IA | Python | [Repositório](https://github.com/Seinenk/cognitiva) |
 
 ---
 
