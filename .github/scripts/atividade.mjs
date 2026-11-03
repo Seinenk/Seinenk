@@ -26,52 +26,56 @@ const PALETA = {
 };
 
 const ICONES = {
-  commit: '<circle cx="12" cy="12" r="3"/><line x1="3" x2="9" y1="12" y2="12"/><line x1="15" x2="21" y1="12" y2="12"/>',
-  pr: '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" x2="6" y1="9" y2="21"/>',
-  issue: '<circle cx="12" cy="12" r="1"/><circle cx="12" cy="12" r="10"/>',
-  repo: '<path d="M18 19a5 5 0 0 1-5-5v8"/><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"/><circle cx="13" cy="12" r="2"/><circle cx="20" cy="19" r="2"/>',
-  star: '<path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>',
+  dias: '<path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/>',
+  zap: '<path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/>',
   flame: '<path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/>',
+  repo: '<path d="M18 19a5 5 0 0 1-5-5v8"/><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"/><circle cx="13" cy="12" r="2"/><circle cx="20" cy="19" r="2"/>',
+  history: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>',
 };
 
+// O token padrão do Actions lê o calendário de contribuições (que inclui as privadas,
+// se o perfil mostrar), mas não os commits de outros repositórios; por isso o cartão
+// usa só números que saem do calendário e dos dados públicos dos repositórios.
 const CONSULTA = `query ($login: String!) {
   user(login: $login) {
-    login
-    repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 100, orderBy: {field: PUSHED_AT, direction: DESC}) {
-      totalCount
-      nodes { name stargazerCount languages(first: 12, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } } }
-    }
     contributionsCollection {
-      totalCommitContributions
-      totalPullRequestContributions
-      totalIssueContributions
-      restrictedContributionsCount
       contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
     }
   }
 }`;
 
+async function api(url, init = {}) {
+  const res = await fetch(url, {
+    ...init,
+    headers: {
+      Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'perfil-seinenk',
+      ...(init.body ? { 'Content-Type': 'application/json' } : {}),
+    },
+  });
+  const json = await res.json();
+  if (!res.ok || json.errors) throw new Error(`${url}: ${res.status} ${JSON.stringify(json.errors ?? json)}`);
+  return json;
+}
+
 async function buscar() {
   const mock = process.argv.indexOf('--mock');
   if (mock > -1) return JSON.parse(fs.readFileSync(process.argv[mock + 1], 'utf8'));
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) throw new Error('Defina GITHUB_TOKEN (ou use --mock arquivo.json).');
-  const res = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: { Authorization: `bearer ${token}`, 'Content-Type': 'application/json', 'User-Agent': 'perfil-seinenk' },
-    body: JSON.stringify({ query: CONSULTA, variables: { login: USUARIO } }),
-  });
-  const json = await res.json();
-  if (!res.ok || json.errors) throw new Error(`GraphQL: ${res.status} ${JSON.stringify(json.errors ?? json)}`);
-  return json.data;
+  if (!process.env.GITHUB_TOKEN) throw new Error('Defina GITHUB_TOKEN (ou use --mock arquivo.json).');
+  const [grafo, usuario, repos] = await Promise.all([
+    api('https://api.github.com/graphql', { method: 'POST', body: JSON.stringify({ query: CONSULTA, variables: { login: USUARIO } }) }),
+    api(`https://api.github.com/users/${USUARIO}`),
+    api(`https://api.github.com/users/${USUARIO}/repos?type=owner&per_page=100&sort=pushed`),
+  ]);
+  return { calendario: grafo.data.user.contributionsCollection.contributionCalendar, usuario, repos };
 }
 
 /* ---------- números ---------- */
 
-function resumir(data) {
-  const u = data.user;
-  const cc = u.contributionsCollection;
-  const dias = cc.contributionCalendar.weeks.flatMap((w) => w.contributionDays);
+function resumir({ calendario, usuario, repos }) {
+  const dias = calendario.weeks.flatMap((w) => w.contributionDays);
   // sequência atual: conta para trás a partir de hoje (ou de ontem, se hoje ainda está zerado)
   let i = dias.length - 1;
   if (i >= 0 && dias[i].contributionCount === 0) i--;
@@ -86,29 +90,35 @@ function resumir(data) {
     corrida = d.contributionCount > 0 ? corrida + 1 : 0;
     maior = Math.max(maior, corrida);
   }
-  const semanas = cc.contributionCalendar.weeks.map((w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, 0));
+  const semanas = calendario.weeks.map((w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, 0));
 
-  const bytes = new Map();
-  for (const repo of u.repositories.nodes) {
-    for (const e of repo.languages.edges) bytes.set(e.node.name, (bytes.get(e.node.name) ?? 0) + e.size);
+  // linguagem principal de cada repositório próprio (bytes favorecem SDKs copiados nos projetos)
+  const contagem = new Map();
+  for (const repo of repos) {
+    if (repo.fork || !repo.language) continue;
+    contagem.set(repo.language, (contagem.get(repo.language) ?? 0) + 1);
   }
-  const totalBytes = [...bytes.values()].reduce((a, b) => a + b, 0) || 1;
-  let linguagens = [...bytes.entries()].sort((a, b) => b[1] - a[1]).map(([nome, b]) => ({ nome, pct: (b / totalBytes) * 100 }));
+  const totalRepos = [...contagem.values()].reduce((a, b) => a + b, 0) || 1;
+  let linguagens = [...contagem.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([nome, n]) => ({ nome, n, pct: (n / totalRepos) * 100 }));
   if (linguagens.length > 6) {
-    const resto = linguagens.slice(5).reduce((s, l) => s + l.pct, 0);
-    linguagens = [...linguagens.slice(0, 5), { nome: 'Outras', pct: resto }];
+    const resto = linguagens.slice(5);
+    linguagens = [...linguagens.slice(0, 5), { nome: 'Outras', n: resto.reduce((s, l) => s + l.n, 0), pct: resto.reduce((s, l) => s + l.pct, 0) }];
   }
 
+  const anos = Math.floor((Date.now() - new Date(usuario.created_at).getTime()) / (365.25 * 864e5));
   return {
-    contribuicoes: cc.contributionCalendar.totalContributions,
+    contribuicoes: calendario.totalContributions,
     atual,
     maior,
     semanas,
-    commits: cc.totalCommitContributions,
-    prs: cc.totalPullRequestContributions,
-    issues: cc.totalIssueContributions,
-    repos: u.repositories.totalCount,
-    estrelas: u.repositories.nodes.reduce((s, r) => s + r.stargazerCount, 0),
+    ativos: dias.filter((d) => d.contributionCount > 0).length,
+    melhorDia: Math.max(0, ...dias.map((d) => d.contributionCount)),
+    melhorSemana: Math.max(0, ...semanas),
+    repos: usuario.public_repos,
+    anos,
+    desde: new Date(usuario.created_at).getUTCFullYear(),
     linguagens,
   };
 }
@@ -179,17 +189,17 @@ function cartao(s, modo, hoje) {
 
   // linha de números menores
   const itens = [
-    ['commit', s.commits, 'commits'],
-    ['pr', s.prs, 'pull requests'],
-    ['issue', s.issues, 'issues'],
+    ['dias', s.ativos, s.ativos === 1 ? 'dia com contribuições' : 'dias com contribuições'],
+    ['zap', s.melhorDia, 'no dia mais produtivo'],
+    ['flame', s.melhorSemana, 'na semana mais intensa'],
     ['repo', s.repos, 'repositórios públicos'],
-    ['star', s.estrelas, 'estrelas'],
+    s.anos >= 1 ? ['history', s.anos, s.anos === 1 ? 'ano no GitHub' : 'anos no GitHub'] : ['history', s.desde, 'no GitHub desde'],
   ];
   const colW = (W - 64) / itens.length;
   const linha = itens
     .map(([ic, n, rot], i) => {
       const x = r(32 + i * colW);
-      return `<g class="fade" style="animation-delay:${r(0.9 + i * 0.08, 2)}s">${icone(ic, x, 182, 16, c.accentStrong)}<text class="mid" x="${x + 24}" y="${195.5}">${fmt(n)}</text><text class="small" x="${x}" y="${218}">${esc(rot)}</text></g>`;
+      return `<g class="fade" style="animation-delay:${r(0.9 + i * 0.08, 2)}s">${icone(ic, x, 181, 16, c.accentStrong)}<text class="mid" x="${x + 24}" y="${195.5}">${fmt(n)}</text><text class="small" x="${x}" y="${218}">${esc(rot)}</text></g>`;
     })
     .join('');
 
@@ -208,8 +218,8 @@ function cartao(s, modo, hoje) {
   const legenda = s.linguagens
     .map((l, i) => {
       const x = r(bar.x + i * legW);
-      const pct = l.pct >= 10 ? Math.round(l.pct) : r(l.pct, 1);
-      return `<g class="fade" style="animation-delay:${r(1.3 + i * 0.07, 2)}s"><circle cx="${x + 5}" cy="${bar.y + 31}" r="5" fill="${c.ramp[i]}" stroke="${c.hairline}"/><text class="small strong" x="${x + 16}" y="${bar.y + 35.5}">${esc(l.nome)}</text><text class="small" x="${x + 16}" y="${bar.y + 53}">${String(pct).replace('.', ',')}%</text></g>`;
+      const qtd = `${l.n} ${l.n === 1 ? 'repositório' : 'repositórios'}`;
+      return `<g class="fade" style="animation-delay:${r(1.3 + i * 0.07, 2)}s"><circle cx="${x + 5}" cy="${bar.y + 31}" r="5" fill="${c.ramp[i]}" stroke="${c.hairline}"/><text class="small strong" x="${x + 16}" y="${bar.y + 35.5}">${esc(l.nome)}</text><text class="small" x="${x + 16}" y="${bar.y + 53}">${qtd}</text></g>`;
     })
     .join('');
 
@@ -242,7 +252,7 @@ text{font-kerning:normal}
   const ultimo = { x: r(area.x + (semanas.length - 1) * bw + bw / 2), y: r(area.y + area.h - hUlt - 7) };
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
 <title id="t">Atividade no GitHub</title>
-<desc id="d">Últimos 12 meses: ${fmt(s.contribuicoes)} contribuições, sequência atual de ${s.atual} dias e maior sequência de ${s.maior} dias; ${fmt(s.commits)} commits, ${fmt(s.prs)} pull requests, ${fmt(s.issues)} issues, ${s.repos} repositórios públicos e ${s.estrelas} estrelas. Linguagens: ${s.linguagens.map((l) => `${l.nome} ${Math.round(l.pct)}%`).join(', ')}.</desc>
+<desc id="d">Últimos 12 meses: ${fmt(s.contribuicoes)} contribuições, sequência atual de ${s.atual} dias e maior sequência de ${s.maior} dias; ${s.ativos} dias com contribuições, ${s.melhorDia} no dia mais produtivo e ${s.melhorSemana} na semana mais intensa; ${s.repos} repositórios públicos. Linguagem principal dos repositórios: ${s.linguagens.map((l) => `${l.nome} (${l.n})`).join(', ')}.</desc>
 <style>${css}</style>
 <defs>
 <clipPath id="od"><rect x="0" y="${yBig - big * 0.95}" width="${W}" height="${big * 1.22}"/></clipPath>
@@ -257,7 +267,7 @@ ${barras}
 <text class="small" x="${area.x}" y="${area.y + area.h + 22}">contribuições por semana</text>
 <line x1="32" x2="${W - 32}" y1="164" y2="164" stroke="${c.hairline}"/>
 ${linha}
-<text class="kicker" x="32" y="248">LINGUAGENS NOS REPOSITÓRIOS</text>
+<text class="kicker" x="32" y="248">LINGUAGEM PRINCIPAL DOS REPOSITÓRIOS</text>
 <rect x="${bar.x}" y="${bar.y}" width="${bar.w}" height="${bar.h}" rx="${bar.h / 2}" fill="${c.card}"/>
 <g clip-path="url(#lb)"><g class="langs" style="transform-origin:${bar.x}px 0">${segs}</g></g>
 ${legenda}
