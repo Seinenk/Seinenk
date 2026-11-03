@@ -6,18 +6,18 @@
 
 <a href="https://seinenk.github.io">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img src="assets/banner-light.svg" width="100%" alt="Carlos Michael da Silva Sousa: desenvolvedor front-end, designer de UX/UI, diretor de tecnologia no Vale do Mel e assessor técnico na Investe Piauí. Portfólio em seinenk.github.io.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/banner-dark.svg">
+    <img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/banner-light.svg" width="100%" alt="Carlos Michael da Silva Sousa: desenvolvedor front-end, designer de UX/UI, diretor de tecnologia no Vale do Mel e assessor técnico na Investe Piauí. Portfólio em seinenk.github.io.">
   </picture>
 </a>
 
 <p align="center">
-  <a href="https://seinenk.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/portfolio-dark.svg"><img src="assets/selos/portfolio-light.svg" height="38" alt="Portfólio"></picture></a>
-  <a href="https://www.linkedin.com/in/carlos-michael-da-silva-sousa-319370336"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/linkedin-dark.svg"><img src="assets/selos/linkedin-light.svg" height="38" alt="LinkedIn"></picture></a>
-  <a href="https://www.instagram.com/carlosmichaels_/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/instagram-dark.svg"><img src="assets/selos/instagram-light.svg" height="38" alt="Instagram"></picture></a>
-  <a href="http://lattes.cnpq.br/7665168854776714"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/lattes-dark.svg"><img src="assets/selos/lattes-light.svg" height="38" alt="Currículo Lattes"></picture></a>
-  <a href="https://orcid.org/0009-0000-8549-7762"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/orcid-dark.svg"><img src="assets/selos/orcid-light.svg" height="38" alt="ORCID"></picture></a>
-  <a href="mailto:carlosmaykesilva@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/selos/email-dark.svg"><img src="assets/selos/email-light.svg" height="38" alt="E-mail"></picture></a>
+  <a href="https://seinenk.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/portfolio-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/portfolio-light.svg" height="38" alt="Portfólio"></picture></a>
+  <a href="https://www.linkedin.com/in/carlos-michael-da-silva-sousa-319370336"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/linkedin-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/linkedin-light.svg" height="38" alt="LinkedIn"></picture></a>
+  <a href="https://www.instagram.com/carlosmichaels_/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/instagram-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/instagram-light.svg" height="38" alt="Instagram"></picture></a>
+  <a href="http://lattes.cnpq.br/7665168854776714"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/lattes-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/lattes-light.svg" height="38" alt="Currículo Lattes"></picture></a>
+  <a href="https://orcid.org/0009-0000-8549-7762"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/orcid-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/orcid-light.svg" height="38" alt="ORCID"></picture></a>
+  <a href="mailto:carlosmaykesilva@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/email-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/selos/email-light.svg" height="38" alt="E-mail"></picture></a>
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@ Hoje sou **assessor técnico na Investe Piauí**, o braço de desenvolvimento do
 Gosto de projetos em que código, design e pessoas se encontram: de uma plataforma de gestão para pequenos negócios do setor alimentício ao monitoramento de abelhas sem ferrão com Internet das Coisas. Minhas pesquisas tratam de inovação e empreendedorismo.
 
 <p align="center">
-  <img src="assets/carlos-ts.svg" width="100%" alt="Janela de editor chamada carlos.ts que alterna quatro visões do mesmo resumo do perfil: código sendo digitado, um quadro de design montado camada por camada, um documento sendo escrito e uma apresentação de slides sendo reorganizada.">
+  <img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/carlos-ts.svg" width="100%" alt="Janela de editor chamada carlos.ts que alterna quatro visões do mesmo resumo do perfil: código sendo digitado, um quadro de design montado camada por camada, um documento sendo escrito e uma apresentação de slides sendo reorganizada.">
 </p>
 
 **Agora**
@@ -75,12 +75,12 @@ Gosto de projetos em que código, design e pessoas se encontram: de uma platafor
 ## Projetos em destaque
 
 <p align="center">
-  <a href="https://github.com/EmilenyRochaLeal/beeSense"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/bee-sense-dark.svg"><img src="assets/projetos/bee-sense-light.svg" width="410" alt="Bee Sense: Raspberry Pi Pico W e sensores monitoram iscas de abelhas sem ferrão e avisam quando chega uma colônia ou um invasor."></picture></a>
-  <a href="https://seinenk.github.io/projetos.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/agende-ai-dark.svg"><img src="assets/projetos/agende-ai-light.svg" width="410" alt="Agende Aí: plataforma para pequenos negócios do setor alimentício, com agendamentos, estoque e logística."></picture></a>
-  <a href="https://github.com/Seinenk/Dino-runner"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/dino-runner-dark.svg"><img src="assets/projetos/dino-runner-light.svg" width="410" alt="Dino Runner: jogo em C para a Raspberry Pi Pico W, com matriz de LEDs 5×5 e tela OLED."></picture></a>
-  <a href="https://github.com/Seinenk/Monitoramento_com_iot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/monitoramento-iot-dark.svg"><img src="assets/projetos/monitoramento-iot-light.svg" width="410" alt="Monitoramento IoT: firmware em C e backend em FastAPI que repassa leituras em tempo real por WebSocket."></picture></a>
-  <a href="https://github.com/Seinenk/cognitiva"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/cognitiva-dark.svg"><img src="assets/projetos/cognitiva-light.svg" width="410" alt="cognitiva: compara respostas de diferentes LLMs pelo OpenRouter, avaliando clareza e coerência."></picture></a>
-  <a href="https://seinenk.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projetos/portfolio-dark.svg"><img src="assets/projetos/portfolio-light.svg" width="410" alt="Portfólio: site em Astro com temas claro e escuro, animações acessíveis e carregamento leve."></picture></a>
+  <a href="https://github.com/EmilenyRochaLeal/beeSense"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/bee-sense-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/bee-sense-light.svg" width="410" alt="Bee Sense: Raspberry Pi Pico W e sensores monitoram iscas de abelhas sem ferrão e avisam quando chega uma colônia ou um invasor."></picture></a>
+  <a href="https://seinenk.github.io/projetos.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/agende-ai-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/agende-ai-light.svg" width="410" alt="Agende Aí: plataforma para pequenos negócios do setor alimentício, com agendamentos, estoque e logística."></picture></a>
+  <a href="https://github.com/Seinenk/Dino-runner"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/dino-runner-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/dino-runner-light.svg" width="410" alt="Dino Runner: jogo em C para a Raspberry Pi Pico W, com matriz de LEDs 5×5 e tela OLED."></picture></a>
+  <a href="https://github.com/Seinenk/Monitoramento_com_iot"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/monitoramento-iot-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/monitoramento-iot-light.svg" width="410" alt="Monitoramento IoT: firmware em C e backend em FastAPI que repassa leituras em tempo real por WebSocket."></picture></a>
+  <a href="https://github.com/Seinenk/cognitiva"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/cognitiva-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/cognitiva-light.svg" width="410" alt="cognitiva: compara respostas de diferentes LLMs pelo OpenRouter, avaliando clareza e coerência."></picture></a>
+  <a href="https://seinenk.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/portfolio-dark.svg"><img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/projetos/portfolio-light.svg" width="410" alt="Portfólio: site em Astro com temas claro e escuro, animações acessíveis e carregamento leve."></picture></a>
 </p>
 
 <details>
@@ -99,8 +99,8 @@ Gosto de projetos em que código, design e pessoas se encontram: de uma platafor
 ## Conquistas
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/conquistas-dark.svg">
-  <img src="assets/conquistas-light.svg" width="100%" alt="1º lugar em Melhor Pitch na IV Mostra Semiárido Digital (2025); exposição do BeeCerrado no Web Summit Lisboa 2025; artigo publicado na revista Lumen et Virtus (2026); 14 eventos, feiras e exposições desde 2022.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/conquistas-dark.svg">
+  <img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/conquistas-light.svg" width="100%" alt="1º lugar em Melhor Pitch na IV Mostra Semiárido Digital (2025); exposição do BeeCerrado no Web Summit Lisboa 2025; artigo publicado na revista Lumen et Virtus (2026); 14 eventos, feiras e exposições desde 2022.">
 </picture>
 
 - **1º lugar em Melhor Pitch** na IV Mostra Semiárido Digital, IFPI (2025)
@@ -138,8 +138,8 @@ Gosto de projetos em que código, design e pessoas se encontram: de uma platafor
 ## Ferramentas do dia a dia
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="Tecnologias: Astro, TypeScript, JavaScript, React, Next.js, HTML, CSS, Figma, WordPress, Flutter, Dart, Vercel, Python, FastAPI, C, Raspberry Pi Pico W, FreeRTOS, Java, pytest, Git, GitHub Actions, OpenRouter e IoT.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/stack-dark.svg">
+  <img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/stack-light.svg" width="100%" alt="Tecnologias: Astro, TypeScript, JavaScript, React, Next.js, HTML, CSS, Figma, WordPress, Flutter, Dart, Vercel, Python, FastAPI, C, Raspberry Pi Pico W, FreeRTOS, Java, pytest, Git, GitHub Actions, OpenRouter e IoT.">
 </picture>
 
 Do Figma ao firmware: desenho interfaces, construo sites e aplicativos e programo sistemas embarcados.
@@ -164,7 +164,7 @@ Quando não estou programando, provavelmente estou **jogando** (é meu hobby pre
 
 <a href="https://seinenk.github.io">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/rodape-dark.svg">
-    <img src="assets/rodape-light.svg" width="100%" alt="Obrigado pela visita. Do Piauí para o mundo: seinenk.github.io">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/rodape-dark.svg">
+    <img src="https://raw.githubusercontent.com/Seinenk/Seinenk/main/assets/rodape-light.svg" width="100%" alt="Obrigado pela visita. Do Piauí para o mundo: seinenk.github.io">
   </picture>
 </a>
