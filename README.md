@@ -89,7 +89,7 @@ Gosto de projetos em que código, design e pessoas se encontram: de uma platafor
 - **Fábrica de Software do IFPI**: projeto de extensão que une teoria e prática; o projeto atual, Zona Azul Digital, automatiza o estacionamento rotativo de Picos.
 - **INCLUA**: Plataforma de Recursos Pró-Equidade em Políticas Públicas, registrada como material didático (2025).
 - **Testes de unidade com pytest**: revisão sistemática da literatura selecionada em edital de pesquisa do IFPI.
-- [**Guaribas Valley**](https://github.com/Seinenk/GuaribasValleyLandingPage): página da comunidade de startups, feita em Astro.
+- **Guaribas Valley**: página da comunidade de startups, feita em Astro.
 - [**Projeto FreeRTOS**](https://github.com/Seinenk/Projeto_FreeRTOS): três tarefas que conversam por filas, no programa EmbarcaTech.
 - [**Atividade multitarefas**](https://github.com/Seinenk/Atividade-multitarefas): sensores I²C e simulação de hardware na Raspberry Pi Pico.
 - [**como-estou**](https://github.com/Seinenk/como-estou): rastreador de humor em Flutter, feito na disciplina de mobile.

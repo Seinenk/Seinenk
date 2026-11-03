@@ -95,7 +95,8 @@ function resumir({ calendario, usuario, repos }) {
   // linguagem principal de cada repositório próprio (bytes favorecem SDKs copiados nos projetos)
   const contagem = new Map();
   for (const repo of repos) {
-    if (repo.fork || !repo.language) continue;
+    // o próprio repositório do perfil (scripts do README) não conta como projeto
+    if (repo.fork || !repo.language || repo.name.toLowerCase() === USUARIO.toLowerCase()) continue;
     contagem.set(repo.language, (contagem.get(repo.language) ?? 0) + 1);
   }
   const totalRepos = [...contagem.values()].reduce((a, b) => a + b, 0) || 1;
