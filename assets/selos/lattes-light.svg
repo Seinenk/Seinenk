@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100.16" height="38" viewBox="0 0 100.16 38" role="img" aria-labelledby="t">
+<title id="t">Lattes</title>
+<style>
+@font-face{font-family:IN;src:url(data:font/woff2;base64,d09GMgABAAAAAAVIAA8AAAAACXgAAATvAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgWIcSgZgP1NUQVRaAFQRCAqFaIUiATYCJAMgCxIABCAFhGQHIBsXCFEU8kjxRUI2J6xuhVGERtWksSr5sH/84JrnXDw8P/d67s3Lb4og222SQBGoKZQALEzdmBSwchNuLPRmm///Peu+ajvJyEgHdOX07GQgrolP4Wv7H+BcepO52/crdveJy2lj4pi4/r8swFTn+EGNuWlsizCwhX9Z1gYOZGhggWWBWJRFeYaYVHvEq19SoA+QQqiFQI81SjG2bMssBMtDlEoCrsdUXDG4nq4jZeCKAa1C7J3kqSMqGeieisZAQE6NfKZbI3oN5y0baTsG9uBh6gAYgydnyz897TDfLg+7L2IJUHHFoUh7lad0gUA0q25uKrpBBC3SSIFtjwx4gb2T/y5dSu0fP9XUK8pNPPtSyG9e5mu3uuoWKIjpR+zYmVUAZ0wju87MjYDmRz5AQNlb38M0bSE0KoyhYyHaufPqZhQOrh0TkAhBnLhcJ0EEmo4RthAyIugiBLEifqKSMjgAARL71ujPYdgA9GmkYlqmOlxkKxRB/Zg7aK1VpgpwhdC45UHQgCFgGPhHHAGggB4hpRBQehgMbRbGYGmzYt0NbXBvc0q3Ra8JdBBWgrQBL6fp0Asx1LdjgCMcMFQsg0IxpRFEgL5oOHq+/lyOt+CUHtQNP3qEuh7DVDIHbyPURclhww8eWBcHH+MjDwEDQwvGdtCM4pEgQrMPADtfWGHo5Juk+oRn9ufCQdB/WPRhxjckqGiIiPQeBRpECvfcnkfFJRIw6vq2FnvV6rqLCvcdMHT2agtLoPPBgxbAGJ13JZKX3YoOPBiu/QgxMYTTcVpc15o9wH6zx24QCIJ4/KidQxBPHncAAXGnz3Se+X8aAWc6m2TnmTNxHW3wDbHm/wd2Zg2jpdaeqCU64t78cK053bG5Jmsn3/9vRS1sBOa9D8DUXX8BbpiLtmc3LMhqUqnWlCVO2ex6vEV3nRsrzq+o2jclTeBNJP26FeLSMEYdDqtPXLDrKyhYaP70cCleXpTXHeyxp7wjKUHNmTgeb1ikm6M1/ZjnEp0UGRKaUuUEGtONX8Y60a4d7czP0ytq98aO9eU/WJJtQW90SnbNGcutjm1wTE12uuVvWdTecyJ196ZYVpLQLqu1pLqqp8wh9QY4m1InkpoGjepveZoWtxXUidpKY0Mzk3L0j3sud1xY2tQonzub30FtTxK1meZf8EznlzZUUHlx4bmJFcb73ZY5zs1peOSKW6Xg5ly9/3VbwjjHYHGQ626vHMyN7cm7FeMT6/evx773AIFi05LhG7M1etH/m4oN8PfqwJ1568t/jfHH5jcqSVf3z8Ljl2WYOQs+oKmJSC393pTrdpb99pcc9XnUWLqCnAcEGrP6nLdIgI7cNuCrShQt4A4EEKZMAmnAe6Cy2KHJIgnUVvsAdEyFpWzA6gisQQj6QtASg6gkEM48OoEI7FhiJlrqmlvgwGKHzeQUKCpCfAIke4H8BQhlr5AAl700MiQuFXu5VOREuBp08Dk0SAJyKmr23G3hkRTUIvnxwyeU26xRz1cDOSm/ziw9A36EPqY9/O2bhauRkIZUPi4+DYk6KsF8+cd6b5R8BbIUiGqmfSwQizU+FwnJydif+gg9PkIf5WBhGvirH8hm7xw1VcxwyfB8VJIkhBrojBqXb3XyfCW4de62ycqh0Ojh15GwV0CoGVeAYD4nDamRs+bX72V1ZOjA3GcvAQA=) format('woff2');font-weight:500;font-style:normal}
+.t{font:500 14px IN;fill:#181722;font-kerning:normal}
+.in{animation:in .8s cubic-bezier(.16,1,.3,1) 0.42s both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.shine{animation:shine 7s ease-in-out 4.05s infinite}
+@keyframes shine{0%{transform:translateX(-70px) skewX(-20deg)}22%,100%{transform:translateX(140.16px) skewX(-20deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.shine{display:none}}
+</style>
+<defs><clipPath id="p"><rect x="1" y="1" width="98.16" height="36" rx="18"/></clipPath>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#DCD2CC" stop-opacity="0"/><stop offset=".5" stop-color="#DCD2CC" stop-opacity="0.75"/><stop offset="1" stop-color="#DCD2CC" stop-opacity="0"/></linearGradient></defs>
+<g class="in">
+<rect x="1" y="1" width="98.16" height="36" rx="18" fill="#FFFFFF" stroke="#E9E3DF" stroke-width="1.5"/>
+<g clip-path="url(#p)"><rect class="shine" x="0" y="-10" width="46" height="58" fill="url(#g)"/></g>
+<g transform="translate(16 11) scale(0.6666666666666666)" fill="none" stroke="#65595B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></g><text class="t" x="41" y="24">Lattes</text>
+</g>
+</svg>

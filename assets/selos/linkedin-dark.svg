@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.81" height="38" viewBox="0 0 115.81 38" role="img" aria-labelledby="t">
+<title id="t">LinkedIn</title>
+<style>
+@font-face{font-family:IN;src:url(data:font/woff2;base64,d09GMgABAAAAAAUcAA8AAAAACbwAAATCAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbgXIcSgZgP1NUQVRaAGQRCAqFcIR2ATYCJAMwCxoABCAFhGQHIBshCEieg3HjXFojWmsXh8mOWTz5XomHp7l/O3cyeX0/SQlkWTHwApNi9LvCAIFQ6wo/5Om/dJAyyKk4M62TcmC6T+MEFV+6C6f1P4C69CZzt+/3x72qGRPHtLHFQhyhn5e5R4dZAf8Ve7FYxxYqYH1hwQKCVRkbYOa9s/OkCjSAJAml0ElbCFSmaeU4b4GoEcL3jurVkHRQj6sg6VifkYAkjnBZIfgk6eh+PQHegWIgEOATtK50aAsN8BeqLVnGEdtoOSvFnMtrdS942NKUGK2kUiC30a4ArFiS67W7Fg2Wh2bx3qmyd5CAMyYNuCL2wwhioXUax1RyOSp+KSnH5ofAM1QhfWJb2tFQFsy+HL/TmrXiBrgJRXT6+JI/aP+S1gIIyDvKL4H+PPdQKdCLnMZhaCdPGcaQSeDKg3IjEuLwuT41MgtNSw/REKSYzBshiLHxC4UkxWzATelG9whKc7TK1C2BusP98YngFFSIywJJgyjuovN22Jqo2hwCJu51WV1BA/oBvYBvQEyugSBOdVO68331AJGrnJtWlVtNbvXtFuXh2LlvM9rl2q5X8YpqYzTqLalzsa4KOl6po1bFhhZuGwA0cylswLpaXVC89mr3a+vkD13d1fF7bK8Q82u7xxKrNdPDqb66iupNi6V5id2OmG0298UWC1DfWJs2WQG6fdOUN3mEwfwmi51R+nw7pvltGk96uNXt+tq6VR/svO+w54F1tKO56qjXf9fSuwKOVXnzuOXxxTbEjJ8KqK+rzTtPguvv78YsBGwWZrdN0THshX0aMNUf3aRuzt4IQ9XVCA/erJ5WyQ/Yzlndc3Nn+UgvivVi09UfiqGdN6ZhaGXvSoKi7YXQx5+B05d/m177ov9BlxfuQn7vhc8XD9M+PD+KfHXnfPkUi9sR55n2Mzh9+e0J/3h+xzSr4HI3NcA4aTTRj1K9PX0Ujh0nSPopswxMffZ9XUYhx49OOf33yNbeU1XL5tVbNkrCHAYHcZJqltV2Vw3E8Tjxj3LCm6bmXOWd2F/lzD4cI55o6e6a0xbLewBrd7zphrWcvvxZFHjR7nrrjw/jviO/lMrFQD6+/k33M8Q6XM4r7GTN1R/q6bm85P6bI6OTCwiBCWOOg+95t8mrhEXFUq60tE5YXKQItKGcec/6ggxXgbjf2Vsgm5N7PzPW4zPt/3bRBn9esWAlPXbb/ybwsOsHoJBA8Cudvc+1oOZlEKM15axYlEbYl+c7/B925Q94KbuK9lgexTz5nZQE0kCA6yFo3MbTKS6C1KJDXbzNQeQOPAS4JPSzUpJ08aqkMML587mdpDTBF0lLvwgXdzEh8noiNHFIYscSz0kmCQ1KMplrPGWaJYnPfqzZ3ONNYCJpjdJTkJEzQuXJkasIqpEcDsVHMMLpoWrpkZRwA4xQdCZGciQ9A1QKOSMjLYMy2bLJKMzrTfplGUDSyO4R0jBIh2KGi6mz3VYMN0jBRKMeTsZErY9egSw5Kx0tV6+BWANbkhcz+2ObYcarFEgENNCtL5KpKEFqacUGTP1ymxHX7xDOsIIjSGdAZEVNYQBWDHBZZ1OXaYGf8uqItBpa6HVzHzVUA4UxuFwFtQw+I7Sy1J/ep/UhOACXjtomBgAA) format('woff2');font-weight:500;font-style:normal}
+.t{font:500 14px IN;fill:#FBFAF9;font-kerning:normal}
+.in{animation:in .8s cubic-bezier(.16,1,.3,1) 0.24s both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.shine{animation:shine 7s ease-in-out 2.95s infinite}
+@keyframes shine{0%{transform:translateX(-70px) skewX(-20deg)}22%,100%{transform:translateX(155.81px) skewX(-20deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.shine{display:none}}
+</style>
+<defs><clipPath id="p"><rect x="1" y="1" width="113.81" height="36" rx="18"/></clipPath>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity="0.14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<g class="in">
+<rect x="1" y="1" width="113.81" height="36" rx="18" fill="#252732" stroke="#2C2F3A" stroke-width="1.5"/>
+<g clip-path="url(#p)"><rect class="shine" x="0" y="-10" width="46" height="58" fill="url(#g)"/></g>
+<g transform="translate(16 11) scale(0.6666666666666666)" fill="none" stroke="#BCAFAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></g><text class="t" x="41" y="24">LinkedIn</text>
+</g>
+</svg>

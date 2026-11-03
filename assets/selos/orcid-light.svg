@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102.99" height="38" viewBox="0 0 102.99 38" role="img" aria-labelledby="t">
+<title id="t">ORCID</title>
+<style>
+@font-face{font-family:IN;src:url(data:font/woff2;base64,d09GMgABAAAAAASwAA8AAAAACPAAAARXAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgT4cSgZgP1NUQVRaAFQRCAqFBIQ0ATYCJAMgCxIABCAFhGQHIBuFBwgehXGbE05RpMaH2G5lpi2FePh+7fXct7vJBkGmjApQKAJyqKoAUHUqHJNnYTu1+T+fZ70UGiurAZgOgJNTIfkZKF0AN5DpUsz/c4Cha/KiMJL/V2JTvGVShWZStNnAzpclVrTmUREMxGZuzZOMILTFWG6UjCG++pEC9YAkhEII1JqkkWBWfmkteK/poXQQuIEitRC4tRUZIJAAKgohFZO2kJQB7KuoKxDgUnHI1ShF/lIJpWQwAcbKJpAhypAGHJN5ib4cpjQF0l8sns4+uLi9jehwGT1IDBGPGRiqppulWl5ExxcFxbj8LC5zkfTJNd7Cf6fIgCRHAMDsOWU1wOlRXc31OgOUP9IcICBfLryEHrZCKGVox8dwvB0muhdLBgc2qBCGQWxCrTqMAJ4qrfxhSJHCHiGIcfEFmSSFHAABEg66AFVgmrNeGXxwj1xFKlRXRI8c8TE7YI/tthbICYSoqAmUoBloBV4T/QHIQa2QhCRBXisQ2IpkApFtYJ2NwLHZxabHvs+hG+xC1oDZQt1inh2/VoZxmwzqSgBqo95khfmiVGuRHdKewqCosEMn/t7CRt5+bDP5KqHWya7FyCZduQKHRfCkvp6pDTZXYh1s++wmP7x5OW48aCsWbKQeNG+PrG+MQmes35Sf2focJrNhcPhK7bL+alvNpFpbgdCuQbOOLNoE5e/HARNgGvFdvzYoz2PcuM4CIesJZ+H+H2wa7rAGSDYuiz2LHhCLKizBLXrKW4kTLQSb9aBybh5kCfuMlTMY3NQCMVyfRe1YX//u/b7bUTutnedylhzR7G5lntrl5+vIkoER+Zb3FvrHtm3Mj5ODbH5/oKI4X2+X98xRr9xxa/yFQpj4BIrv/+6kbF5Z+uLlqjJi69/jX1bfHzB+2bTR8PHWwFK6z12C4rseZkyPqzV6x4b6d+8RE73Tao3cyc3v3wEWuYM7z54YRD+27UgAHNbyjuVs34a+W2D5B8fSue5pp/nyxEnUOSo5paGgiR8xViSOHvfN2zBuShZTU5vVM36G0RMAArkZf3LafjQ7pP+XZBKAv/vHn8Sgaz+//e1wXSN5gExq8n9k7thronx71w7IOGVBYIXCe3YVx9zjRVouGiphojiBIL0ABErHod5OYgFyuV+jR5CJXAqcBJkXus3gJY0e8jIj7WjOrbzCRE94VbrDG200MWLTMAzqQwVMHAHxknmGhZdCEgs0BAiLTksOslgHMxmZ9KCoKakguFjRYiTC1VIh4YoYICQKrhLFSIPUDsHJMRAVIwoNF0wFQUxoqaJEUVLvyzPaRGpnpBeFQtOjRVG7tIY4bluG1EGNoVeNpMTQaUWJFyk67L1pqtUoUyMttUaMwNRLXTupGRngVRHRGSHxBgzUJO3qNlQ1tPyU0jUGSQYKF4Cgjlp7J0gjRa7HrtQAxaJLh1IrmKQvu7fSwdVQ60WKEW+gF0FSo656gU9rZcAHetfBNSAA) format('woff2');font-weight:500;font-style:normal}
+.t{font:500 14px IN;fill:#181722;font-kerning:normal}
+.in{animation:in .8s cubic-bezier(.16,1,.3,1) 0.51s both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.shine{animation:shine 7s ease-in-out 4.6s infinite}
+@keyframes shine{0%{transform:translateX(-70px) skewX(-20deg)}22%,100%{transform:translateX(142.99px) skewX(-20deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.shine{display:none}}
+</style>
+<defs><clipPath id="p"><rect x="1" y="1" width="100.99" height="36" rx="18"/></clipPath>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#DCD2CC" stop-opacity="0"/><stop offset=".5" stop-color="#DCD2CC" stop-opacity="0.75"/><stop offset="1" stop-color="#DCD2CC" stop-opacity="0"/></linearGradient></defs>
+<g class="in">
+<rect x="1" y="1" width="100.99" height="36" rx="18" fill="#FFFFFF" stroke="#E9E3DF" stroke-width="1.5"/>
+<g clip-path="url(#p)"><rect class="shine" x="0" y="-10" width="46" height="58" fill="url(#g)"/></g>
+<path transform="translate(16 11) scale(0.6666666666666666)" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" fill="#65595B"/><text class="t" x="41" y="24">ORCID</text>
+</g>
+</svg>

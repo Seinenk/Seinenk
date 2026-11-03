@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.9" height="38" viewBox="0 0 115.9 38" role="img" aria-labelledby="t">
+<title id="t">Portfólio</title>
+<style>
+@font-face{font-family:IN;src:url(data:font/woff2;base64,d09GMgABAAAAAAVQAA8AAAAACiwAAAT2AAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAGhwbgh4cSgZgP1NUQVRaAHQRCAqGGIUQATYCJAM4Cx4ABCAFhGQHIBt/CAgeg23bOCoYTsVkePcDEeh/PHy/xu/ct/tdMUkmSTSqaDUPicTQiEwX8UiExvw1KqeuLJnOCrICxHJSQDJBZbnM8GzHUAIogP+py+QvDUun0vHAnvTF7vdraVTTzALWK7WGzQOWYCjzIgGxmBsjbgYYYSi25lEyQgY8/6cKVAOSJGRCiQohUGmsLpipjVp0QOTaoYIZKRsFjQkp2/qKVqRgoPgvhDZI2qoRrPAtksEgQKXBkKtQLmRmE8olezA4Yxm5MgA95dpU/IHiJ2SvAtDexU2REvkbQX5RcYisuAcUn1kaBZFtHiqUKpHBYqZkG4KAEpIkU4bE66+AxOAbjLSvlzCYTgsUplifGlyltOgSQrW8JC/+KqFkZP4E3OklkZ5YmVb/d0oykOTIAGDO3JbtcQbns/xMVyCUf0kLAAH5Cul10BsrhHIZmtEYRLLT7hhGlcHBjXqRohCbxb5miodEqUaxKKQo54sQxMj4i0ySQg0gQMLBECAzVs2iP1qutza0DMxsBKLP/2P+zOJPsfeKyy69+KILB6NULx+iKNSBWtAdtIDPEMNBJ2gGVEriJzWlZNQ+YU4YhpURRsayqog8968PDmeqh/oO9xsCnyCdKRZVSyQ+dAdCoZ+gKlSojE6UHQtUMGqTZWCpCFW5XNVRv+lu9ziXi7CM1Ge610uN9XgIOxyklMiHtWNPreo8WXKHRYfINBdQVaFSDB9KhlumeW4xyNttNzHmvavTG/BwzoUxb9y7HVWSvJiMRWY1cxQkH3Mtsy+ndjzg2sVDSQmlolWS4d1VXYZf68dOvS+MeV07ds0eKL7fj5sCfiLv9YxS8/wN72jwah+eGXPm/2m8Xj4Ca94ztaMl+oBf839znFlz19OH4/vwo2sfXPnWnB5t+Ob0mdN9NHsfbCR92brj6eiBN4OFW09H7cwjjzqtk5vXjG/foWbclKa2cGT+7rX/1/bP2137XWP0PaYvbtilvldI54K9X14ltmrYslk/LFhxpxfCSl7Kts84VjK0rnw1eyy9Y9dYpretXKVxmF07xtIrHNVOMPJ7jCZ+H7xazXjY9pp1WD4QFqxwH2Bjly7V9QtpF3h9f708cdrQ2np7s81I7d9r//2R9bPUAYMLU3ZntiaptzavmDV7/f715E4lKs+9n57x+FIG/Pcry2c1LyltxcrL2zYvLVkTkoEYlKr5n15ThjJVYQAagEMQ52W+WFW8zJ2ySBRykx/cPL6st1/Vv3JaAfh5YPIcuejKn9/+DgjepngAMgkE/7C1ZR9F+PZuKVS715bwVBNpgo2ZEs0px6EdeY2Vu/WxZeG67ijzawMBd1MC4DgKtc5h7SIXkqmsbH4PLXIluASaILSbI0hq3RVkhji0MGcFJcZ4IijVHp38WmNiRAtFoTr0QBRiREGZ8DglKKeIJToemDWfSw0SO1DPxm4ogYGOnohTIE++EpwO9DQ4TVmJNAScNgQ2Rhr9iThqTiI9G4EDJ42eSGTnUCFXLh0Dub5TPzn6s7HIfeSzcMBicFmc7njVljQGMHCyaEdDx8msL0GRHHmf1VUSvvZatgsrZXH2DEQn4LqcgY0VV1RfDGQraaBFSvWXp98kU0cvCWIsaFhpXWAUzAz6GwUHjZx4yjqdaYIenkpszQ4e7t+XGac9g2E08hUR5KZEQBraBfhtfVnRQNcOK1UAAA==) format('woff2');font-weight:500;font-style:normal}
+.t{font:500 14px IN;fill:#FBFAF9;font-kerning:normal}
+.in{animation:in .8s cubic-bezier(.16,1,.3,1) 0.15s both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.shine{animation:shine 7s ease-in-out 2.4s infinite}
+@keyframes shine{0%{transform:translateX(-70px) skewX(-20deg)}22%,100%{transform:translateX(155.9px) skewX(-20deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.shine{display:none}}
+</style>
+<defs><clipPath id="p"><rect x="1" y="1" width="113.9" height="36" rx="18"/></clipPath>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity="0.14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<g class="in">
+<rect x="1" y="1" width="113.9" height="36" rx="18" fill="#252732" stroke="#2C2F3A" stroke-width="1.5"/>
+<g clip-path="url(#p)"><rect class="shine" x="0" y="-10" width="46" height="58" fill="url(#g)"/></g>
+<path transform="translate(15 10) scale(0.28125)" d="M32 3.5 56.68 17.75v28.5L32 60.5 7.32 46.25v-28.5Z" fill="#FBFAF9"/><text class="t" x="41" y="24">Portfólio</text>
+</g>
+</svg>

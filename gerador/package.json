@@ -1,0 +1,17 @@
+{
+  "name": "gerador-perfil",
+  "private": true,
+  "type": "module",
+  "description": "Gera os SVGs animados do README do perfil (assets/) e as fontes do cartão de atividade.",
+  "scripts": {
+    "gerar": "node gerar.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "lucide-static": "1.66.0",
+    "opentype.js": "2.0.0",
+    "simple-icons": "16.36.0"
+  }
+}
